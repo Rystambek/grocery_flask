@@ -8,13 +8,13 @@ db = GroceryDB()
 @app.route('/')
 def home():
     html = """<table>
-    <a href="http://127.0.0.1:5000/grocery"> All product </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/fruit"> fruit </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/vegetable"> vegetable </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/dairy"> dairy </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/bakery"> bakery </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/meat"> meat </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/grain"> grain </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery"> All product </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/grain"> grain </a><br>
     </table>"""
     return html
 # view all grocery
@@ -25,13 +25,13 @@ def all_grocery():
 
     html = '<table border="1">'
     html += """
-    <a href="http://127.0.0.1:5000/grocery"> All product </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/fruit"> fruit </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/vegetable"> vegetable </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/dairy"> dairy </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/bakery"> bakery </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/meat"> meat </a><br>
-    <a href="http://127.0.0.1:5000/grocery/type/grain"> grain </a><br>"""
+    <a href="https://deployuud.pythonanywhere.com/grocery"> All product </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+    <a href="https://deployuud.pythonanywhere.com/grocery/type/grain"> grain </a><br>"""
     html += """<tr><th>name</th> <th>quantity</th> <th>price</th> <th>type</th></tr>"""
     for fruit in fruits:
         html += f'<tr><th>{fruit["name"]}</th><th>{fruit["quantity"]}</th><th>{fruit["price"]}$</th><th>{fruit["type"]}</th></tr>'
@@ -56,13 +56,13 @@ def all_grocery_by_type(type):
     if fruits :
         html = """
         <table border="1">
-        <a href="http://127.0.0.1:5000/grocery"> All product </a><br>
-        <a href="http://127.0.0.1:5000/grocery/type/fruit"> fruit </a><br>
-        <a href="http://127.0.0.1:5000/grocery/type/vegetable"> vegetable </a><br>
-        <a href="http://127.0.0.1:5000/grocery/type/dairy"> dairy </a><br>
-        <a href="http://127.0.0.1:5000/grocery/type/bakery"> bakery </a><br>
-        <a href="http://127.0.0.1:5000/grocery/type/meat"> meat </a><br>
-        <a href="http://127.0.0.1:5000/grocery/type/grain"> grain </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery"> All product </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+        <a href="https://deployuud.pythonanywhere.com/grocery/type/grain"> grain </a><br>
         <tr>
             <th>name</th>
             <th>quantity</th>
