@@ -5,7 +5,18 @@ from db import GroceryDB
 app = Flask(__name__)
 db = GroceryDB()
 
-
+@app.route('/')
+def home():
+    html = """<table>
+    <a href="http://127.0.0.1:5000/grocery"> All product </a><br>
+    <a href="http://127.0.0.1:5000/grocery/type/fruit"> fruit </a><br>
+    <a href="http://127.0.0.1:5000/grocery/type/vegetable"> vegetable </a><br>
+    <a href="http://127.0.0.1:5000/grocery/type/dairy"> dairy </a><br>
+    <a href="http://127.0.0.1:5000/grocery/type/bakery"> bakery </a><br>
+    <a href="http://127.0.0.1:5000/grocery/type/meat"> meat </a><br>
+    <a href="http://127.0.0.1:5000/grocery/type/grain"> grain </a><br>
+    </table>"""
+    return html
 # view all grocery
 @app.route('/grocery')
 def all_grocery():
